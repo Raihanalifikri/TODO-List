@@ -1,0 +1,174 @@
+/* Navbar */
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 8%;
+    background-color: rgba(58, 58, 58, 0.79);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: black;
+    display: none;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+}
+
+.navbar a {
+    color:rgb(163, 224, 237) ;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 2rem;
+    padding: 0rem;
+    transition: 1.3s;
+}
+
+
+.navbar a:hover{
+    color: rgb(0, 255, 26);
+}
+
+ 
+
+ .user{
+    display:inline-block;
+    padding: 1rem 2.8rem;
+    border-radius: 1rem;
+    background: whitesmoke;
+    box-shadow: 2.4px 2.9px 12px 0px rgba(43, 43, 43, 0.945);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 1s;
+}
+ .user:hover{
+    background: rgb(2, 2, 2);
+    color: antiquewhite;
+}
+
+/* form */
+
+form {
+    margin-top: 100px;
+}
+
+/* Menampilkan data */
+.container h2 {
+    background-image: url("kertas.png");
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+.box {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    background-image: url("kertas.png");
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgb(90, 81, 81);
+    border-left: 1px solid rgb(59, 55, 55);
+    border-radius: 15px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -200px;
+    transform: skewX(35deg);
+    transition: .2s;
+    width: 35%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .1), transparent);
+}
+
+.box:hover::before {
+    left: calc(100% + 100px);
+    transition: .2s;
+}
+
+.number {
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 5%;
+    z-index: 1000;
+    color: rgb(0, 0, 0);
+}
+
+.bulat {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    clip-path: circle(50% at 50% 50%);
+}
+
+
+
+.list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 20px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.bottom {   
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.delete {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.bottom a {
+    width: 39px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.bottom a:hover {
+    width: 130px;
+}
+
+.bottom a i {
+    color: transparent;
+}
+
+.bottom a:hover i {
+    color: white;
+}
+
+.bottom a i::before {
+    margin-right: 10px;
+    color: white;
+}
